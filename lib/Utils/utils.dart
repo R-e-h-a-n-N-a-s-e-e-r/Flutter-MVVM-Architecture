@@ -4,6 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class Utils {
+  static void fieldFocus(
+    BuildContext context,
+    FocusNode currentFocus,
+    FocusNode nextFocus,
+  ) {
+    currentFocus.unfocus();
+    FocusScope.of(context).requestFocus(nextFocus);
+  }
+
   static flutterToastErrorMessage(String message) {
     return Fluttertoast.showToast(
       msg: message,
@@ -17,7 +26,6 @@ class Utils {
     showFlushbar(
       context: context,
       flushbar: Flushbar(
-        title: "Hey Ninja",
         titleColor: Colors.white,
         message: message,
         flushbarPosition: FlushbarPosition.TOP,
@@ -44,7 +52,7 @@ class Utils {
 
   static snackBar(String message, BuildContext context) {
     return ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(message), backgroundColor: Colors.red,),
+      SnackBar(content: Text(message), backgroundColor: Colors.red),
     );
   }
 }
