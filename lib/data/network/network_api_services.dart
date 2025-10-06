@@ -10,7 +10,7 @@ class NetworkApiServices extends BaseApiServices {
     dynamic responseJson;
     try {
       final response = await http
-          .get(Uri.parse(url))
+          .get(Uri.parse(url), headers: {'x-api-key': 'reqres-free-v1'})
           .timeout(Duration(seconds: 10));
       responseJson = returnResponse(response);
     } on SocketException {
@@ -23,7 +23,13 @@ class NetworkApiServices extends BaseApiServices {
   Future getPOSTResponse(String url, data) async {
     dynamic responseJson;
     try {
-      final response = await http.post(Uri.parse(url), body: data);
+      final response = await http.post(
+        Uri.parse(url),
+        body: data,
+        headers: {
+          'x-api-key': 'reqres-free-v1'
+        },
+      );
       responseJson = returnResponse(response);
     } on SocketException {
       throw FetchDataException('No Internet Connection');
