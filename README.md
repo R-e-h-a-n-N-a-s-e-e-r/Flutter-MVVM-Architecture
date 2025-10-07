@@ -1,16 +1,16 @@
-# flutter_mvvm_architecture
+# Flutter MVVM Architecture
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Set the MVVM Structure and login page
 
-A few resources to get you started if this is your first Flutter project:
+<img width="350" height="620" alt="Flutter_practice_7 1" src="https://github.com/user-attachments/assets/34c947f7-7893-4031-917a-2777e45d79ce" />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+________________________________________________________________________________________________________________________________________________________________________________
+
+# Fully Functioned Login page with MVVM Architecture
+
+<img width="349" height="620" alt="Flutter_practice_7 2" src="https://github.com/user-attachments/assets/d6fcc3ed-8772-44b5-a738-d88e16b158da" />
