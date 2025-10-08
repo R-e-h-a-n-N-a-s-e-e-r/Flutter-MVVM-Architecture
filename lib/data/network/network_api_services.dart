@@ -26,9 +26,7 @@ class NetworkApiServices extends BaseApiServices {
       final response = await http.post(
         Uri.parse(url),
         body: data,
-        headers: {
-          'x-api-key': 'reqres-free-v1'
-        },
+        headers: {'x-api-key': 'reqres-free-v1'},
       );
       responseJson = returnResponse(response);
     } on SocketException {
